@@ -19,7 +19,6 @@ namespace DatingApp.API.Controllers
             _context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
-        [AllowAnonymous]
         [HttpGet]
         public async Task<IActionResult> GetValues()
         {
